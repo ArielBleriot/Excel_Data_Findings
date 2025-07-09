@@ -1,42 +1,21 @@
-In this Power BI project, I partnered with a fictional avocado distributor to deliver data-driven insights into sales performance across U.S. regions.
+# 🥑 Avocado Sales Analytics | Power BI Dashboard
 
-🔍 Key Objectives:
+This project analyzes avocado sales data across U.S. regions using Power BI. It delivers interactive visuals and KPIs to support better business decisions.
 
-Analyze monthly avocado sales trends
+## 📌 Features
+- Month-Year Sales Breakdown
+- Organic Volume Analysis
+- Growth % Indicators
+- KPIs for Bag Types and Regional Performance
+- Cleaned region labels for clear groupings
 
-Compare organic vs. conventional volumes
+## 📈 Technologies
+- Power BI Desktop
+- Excel (Pivot, Subtotal, Cleanup)
+- DAX formulas & Time Intelligence
+- Power Query for data wrangling
 
-Identify growth patterns and anomalies
-
-📊 Features Delivered:
-
-A fully dynamic Month-Year performance table:
-
-Total volume this month vs. last
-
-% Growth with intuitive icon indicators
-
-Organic sales volume & % share (highlighted if <2.5%)
-
-KPI visuals for:
-
-Small Bag share of total bags
-
-Regional sales starting with “South”
-
-A Revenue by Region visualization for strategic targeting
-
-⚙️ Techniques Used:
-
-Power BI DAX: CALCULATE, DATEADD, DIVIDE, FORMAT, etc.
-
-Time Intelligence via CALENDARAUTO() and a separate Date Table
-
-Data modeling and relationship design (One-to-Many)
-
-Region data cleaning & transformation in Power Query to ensure valid groupings
-
-✅ Verified data accuracy using Excel (Pivot Tables & Subtotals)
-🔁 Removed duplicates and reconciled unexpected spikes (e.g., Nov 2015 volume)
-
-💼 This project simulates a real-world client deliverable, optimizing regional marketing decisions using clean visuals and actionable KPIs.
+## 🧠 Key Learnings
+- Mastery of DAX Time Intelligence
+- Real-world scenario simulation with client-like constraints
+- Effective visual storytelling and KPI design
