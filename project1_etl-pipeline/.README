@@ -1,1 +1,43 @@
+# AWS ETL Pipeline (Serverless)
+
+This project demonstrates a **serverless ETL pipeline on AWS** using:
+- **AWS S3** for storage
+- **AWS Lambda** for transformation
+- **AWS Glue** for cataloging
+- **Amazon Athena** for analytics
+
+## ✅ Architecture
+![Architecture Diagram](architecture-diagram.png)
+
+1. **Raw Data**: JSON files uploaded to S3 (`orders_json_incoming/`)
+2. **Lambda Trigger**: On file upload, AWS Lambda processes the file
+3. **Transformation**: Lambda flattens JSON using pandas and converts it to Parquet
+4. **Storage**: Processed data is stored back in S3 (`orders_parquet_datalake/`)
+5. **Analytics**: Data is queried using Athena
+
+---
+
+## ✅ Tech Stack
+- **Python** (pandas, boto3, pyarrow)
+- **AWS Services**: Lambda, S3, Glue, Athena
+
+---
+
+## ✅ Features
+- Automated event-driven ETL
+- Converts JSON → Parquet for performance
+- Glue catalog integration for Athena queries
+
+---
+
+## ✅ Steps to Deploy
+1. Create S3 bucket: `project1-ariel`
+2. Create Lambda function and upload `lambda_function.py`
+3. Attach proper IAM role (S3 read/write)
+4. Create Glue database and table for Athena
+5. Test by uploading JSON file to `orders_json_incoming/`
+
+---
+
+
 
