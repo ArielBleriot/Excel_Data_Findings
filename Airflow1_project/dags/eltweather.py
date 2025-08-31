@@ -6,7 +6,7 @@ from airflow.utils import timezone  # Airflow 3.x replacement for days_ago
 import requests
 import json
 
-# Latitude and longitude for the desired location (London in this case)
+
 LATITUDE = '51.5074'
 LONGITUDE = '-0.1278'
 POSTGRES_CONN_ID = 'postgres_default'
@@ -14,14 +14,14 @@ API_CONN_ID = 'open_meteo_api'
 
 default_args = {
     'owner': 'airflow',
-    'start_date': timezone.utcnow()  # use current UTC time as start_date
+    'start_date': timezone.utcnow()  
 }
 
-# DAG definition
+
 with DAG(
     dag_id='weather_etl_pipeline',
     default_args=default_args,
-    schedule='@daily',  # <-- changed from schedule_interval
+    schedule='@daily',  
     catchup=False
 ) as dag:
 
@@ -71,7 +71,7 @@ with DAG(
         );
         """)
 
-        # Insert transformed data
+        
         cursor.execute("""
         INSERT INTO weather_data (latitude, longitude, temperature, windspeed, winddirection, weathercode)
         VALUES (%s, %s, %s, %s, %s, %s)
