@@ -1,28 +1,28 @@
-# 🌩️ AWS Serverless ETL Pipeline
+# 🌩️ **AWS Serverless ETL Pipeline**
 
 This project demonstrates how to build a **scalable, serverless ETL pipeline on AWS** to process and analyze weather data efficiently.
 
 ---
 
-## 🏗️ Architecture Overview
+## 🏗️ **Architecture Overview**
 
 | Component | Role |
 |-----------|------|
-| **AWS S3** | Stores **incoming raw JSON files** and processed **Parquet files** |
-| **AWS Lambda** | Triggered on new file uploads, **flattens JSON** using pandas, writes **Parquet** back to S3 |
-| **AWS Glue** | Catalogs processed data for querying |
-| **Amazon Athena** | Enables **SQL-based analytics** on S3-stored data |
+| <span style="color:#FF9900"><b>AWS S3</b></span> | Stores **incoming raw JSON files** and processed **Parquet files** |
+| <span style="color:#FF9900"><b>AWS Lambda</b></span> | Triggered on new file uploads, **flattens JSON** using pandas, writes **Parquet** back to S3 |
+| <span style="color:#FF9900"><b>AWS Glue</b></span> | Catalogs processed data for querying |
+| <span style="color:#FF9900"><b>Amazon Athena</b></span> | Enables **SQL-based analytics** on S3-stored data |
 
 ---
 
-## 💻 Tech Stack
+## 💻 **Tech Stack**
 
-- **Python**: pandas, boto3, pyarrow  
+- **Python**: `pandas`, `boto3`, `pyarrow`  
 - **AWS Services**: S3, Lambda, Glue, Athena  
 
 ---
 
-## ⚡ Key Features
+## ⚡ **Key Features**
 
 - Converts **JSON → Parquet** for optimized storage and fast querying  
 - Fully **automated pipeline** triggered on file upload  
@@ -30,7 +30,7 @@ This project demonstrates how to build a **scalable, serverless ETL pipeline on 
 
 ---
 
-## 🛠️ What I Learned
+## 🛠️ **What I Learned**
 
 - Event-driven data processing using **AWS Lambda**  
 - **Schema evolution** and **data partitioning** best practices  
@@ -38,7 +38,7 @@ This project demonstrates how to build a **scalable, serverless ETL pipeline on 
 
 ---
 
-## ⚠️ Challenges Faced
+## ⚠️ **Challenges Faced**
 
 - URL decoding of **S3 object keys** from event payload  
 - Configuring **IAM policies** for secure Lambda execution  
@@ -46,15 +46,21 @@ This project demonstrates how to build a **scalable, serverless ETL pipeline on 
 
 ---
 
-## 📌 Key Takeaways
+## 📌 **Key Takeaways**
 
-This project reinforced my skills in **serverless architectures**, **AWS data services**, and **automated ETL pipelines** — foundational knowledge for real-world **Data Engineering** projects.
+This project reinforced my skills in:  
+- **Serverless architectures**  
+- **AWS data services**  
+- **Automated ETL pipelines**  
+
+A foundational experience for real-world **Data Engineering** projects.
 
 ---
 
-## 📂 Repository
+## 📂 **Repository Links**
 
-Explore also this customer churn prediction project: [Customer_Churn_prediction](https://github.com/ArielBleriot/Excel_Data_Findings/tree/main/Customer%20Churn%20Prediction%20-%20Machine%20Learning%20Project)
+- Explore this project on GitHub: [Airflow1_project ETL](https://github.com/ArielBleriot/Excel_Data_Findings/edit/main/Airflow1_project/README.md)  
+- Related project: [Customer Churn Prediction](https://github.com/ArielBleriot/Excel_Data_Findings/tree/main/Customer%20Churn%20Prediction%20-%20Machine%20Learning%20Project)  
 
 ---
 
