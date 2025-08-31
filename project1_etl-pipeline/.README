@@ -1,67 +1,62 @@
-# 🌩️ **AWS Serverless ETL Pipeline**
+🌩️ AWS Serverless ETL Pipeline
 
-This project demonstrates how to build a **scalable, serverless ETL pipeline on AWS** to process and analyze weather data efficiently.
+This project demonstrates how to build a scalable, serverless ETL pipeline on AWS to process and analyze weather data efficiently.
 
----
+🏗️ Architecture Overview
 
-## 🏗️ **Architecture Overview**
+AWS S3 – Stores incoming raw JSON files and processed Parquet files
+AWS Lambda – Triggered on new file uploads, flattens JSON using pandas, writes Parquet back to S3
+AWS Glue – Catalogs processed data for querying
+Amazon Athena – Enables SQL-based analytics on S3-stored data
 
-| Component | Role |
-|-----------|------|
-| <span style="color:#FF9900"><b>AWS S3</b></span> | Stores **incoming raw JSON files** and processed **Parquet files** |
-| <span style="color:#FF9900"><b>AWS Lambda</b></span> | Triggered on new file uploads, **flattens JSON** using pandas, writes **Parquet** back to S3 |
-| <span style="color:#FF9900"><b>AWS Glue</b></span> | Catalogs processed data for querying |
-| <span style="color:#FF9900"><b>Amazon Athena</b></span> | Enables **SQL-based analytics** on S3-stored data |
+💻 Tech Stack
 
----
+Python: pandas, boto3, pyarrow
 
-## 💻 **Tech Stack**
+AWS Services: S3, Lambda, Glue, Athena
 
-- **Python**: `pandas`, `boto3`, `pyarrow`  
-- **AWS Services**: S3, Lambda, Glue, Athena  
+Tools: DBeaver (database visualization & monitoring)
 
----
+⚡ Key Features
 
-## ⚡ **Key Features**
+Converts JSON → Parquet for optimized storage and fast querying
 
-- Converts **JSON → Parquet** for optimized storage and fast querying  
-- Fully **automated pipeline** triggered on file upload  
-- Designed with **scalability** and **cost-efficiency** in mind  
+Fully automated pipeline triggered on file upload
 
----
+Designed with scalability and cost-efficiency in mind
 
-## 🛠️ **What I Learned**
+🛠️ What I Learned
 
-- Event-driven data processing using **AWS Lambda**  
-- **Schema evolution** and **data partitioning** best practices  
-- Handling **Lambda packaging issues** with dependencies  
+Event-driven data processing using AWS Lambda
 
----
+Schema evolution and data partitioning best practices
 
-## ⚠️ **Challenges Faced**
+Handling Lambda packaging issues with dependencies
 
-- URL decoding of **S3 object keys** from event payload  
-- Configuring **IAM policies** for secure Lambda execution  
-- Managing **Lambda execution time and memory** for large datasets  
+⚠️ Challenges Faced
 
----
+URL decoding of S3 object keys from event payload
 
-## 📌 **Key Takeaways**
+Configuring IAM policies for secure Lambda execution
 
-This project reinforced my skills in:  
-- **Serverless architectures**  
-- **AWS data services**  
-- **Automated ETL pipelines**  
+Managing Lambda execution time and memory for large datasets
 
-A foundational experience for real-world **Data Engineering** projects.
+📌 Key Takeaways
 
----
+This project reinforced my skills in:
 
-## 📂 **Repository Links**
+Serverless architectures
 
-- Explore this project on GitHub: [Airflow1_project ETL](https://github.com/ArielBleriot/Excel_Data_Findings/edit/main/Airflow1_project/README.md)  
-- Related project: [Customer Churn Prediction](https://github.com/ArielBleriot/Excel_Data_Findings/tree/main/Customer%20Churn%20Prediction%20-%20Machine%20Learning%20Project)  
+AWS data services
 
----
+Automated ETL pipelines
 
-Made with ❤️ by **Ariel Bleriot Ndonfak Sapi**
+A foundational experience for real-world Data Engineering projects.
+
+📂 Repository Links
+
+Explore this project on GitHub: Airflow1_project ETL
+
+Related project: Customer Churn Prediction
+
+Made with ❤️ by Ariel Bleriot Ndonfak Sapi
