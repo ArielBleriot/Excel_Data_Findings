@@ -1,37 +1,61 @@
-AWS Serverless ETL Pipeline
-This project demonstrates how to build a scalable, serverless ETL pipeline on AWS.
+# 🌩️ AWS Serverless ETL Pipeline
 
-Architecture:
-AWS S3: Stores incoming raw JSON files and processed Parquet files
+This project demonstrates how to build a **scalable, serverless ETL pipeline on AWS** to process and analyze weather data efficiently.
 
-AWS Lambda: Triggers on new file upload, flattens JSON using pandas, and writes the data in Parquet format back to S3
+---
 
-AWS Glue: Catalogs the processed data for querying
+## 🏗️ Architecture Overview
 
-Amazon Athena: Enables SQL-based analytics on data stored in S3
+| Component | Role |
+|-----------|------|
+| **AWS S3** | Stores **incoming raw JSON files** and processed **Parquet files** |
+| **AWS Lambda** | Triggered on new file uploads, **flattens JSON** using pandas, writes **Parquet** back to S3 |
+| **AWS Glue** | Catalogs processed data for querying |
+| **Amazon Athena** | Enables **SQL-based analytics** on S3-stored data |
 
-Tech Stack:
-Python (pandas, boto3, pyarrow)
+---
 
-AWS Services: S3, Lambda, Glue, Athena
+## 💻 Tech Stack
 
-Key Features:
-Converts JSON → Parquet for optimized storage and querying
+- **Python**: pandas, boto3, pyarrow  
+- **AWS Services**: S3, Lambda, Glue, Athena  
 
-Fully automated pipeline triggered on file upload
+---
 
-Designed with scalability and cost-efficiency in mind
+## ⚡ Key Features
 
-What I Learned:
-Event-driven data processing using AWS Lambda
+- Converts **JSON → Parquet** for optimized storage and fast querying  
+- Fully **automated pipeline** triggered on file upload  
+- Designed with **scalability** and **cost-efficiency** in mind  
 
-Schema evolution and data partitioning best practices
+---
 
-Handling Lambda packaging issues with dependencies
+## 🛠️ What I Learned
 
-Challenges:
-URL decoding S3 object keys from event payload
+- Event-driven data processing using **AWS Lambda**  
+- **Schema evolution** and **data partitioning** best practices  
+- Handling **Lambda packaging issues** with dependencies  
 
-Configuring IAM policies for secure Lambda execution
+---
 
-Managing Lambda execution time and memory for large datasets
+## ⚠️ Challenges Faced
+
+- URL decoding of **S3 object keys** from event payload  
+- Configuring **IAM policies** for secure Lambda execution  
+- Managing **Lambda execution time and memory** for large datasets  
+
+---
+
+## 📌 Key Takeaways
+
+This project reinforced my skills in **serverless architectures**, **AWS data services**, and **automated ETL pipelines** — foundational knowledge for real-world **Data Engineering** projects.
+
+---
+
+## 📂 Repository
+
+Explore the project code here: [Airflow1_project Repository](https://github.com/ArielBleriot/Excel_Data_Findings/edit/main/Airflow1_project/README.md)
+
+---
+
+Made with ❤️ by **Ariel Bleriot Ndonfak Sapi**
