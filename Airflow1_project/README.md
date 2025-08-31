@@ -1,45 +1,68 @@
-Overview
-========
+# 🚀 Airflow1_project: Automated Weather ETL Pipeline
 
-Welcome to Astronomer! This project was generated after you ran 'astro dev init' using the Astronomer CLI. This readme describes the contents of the project, as well as how to run Apache Airflow on your local machine.
+Welcome to **Airflow1_project**! This mini-project demonstrates a fully automated **Weather ETL pipeline** built with **Apache Airflow**, **Python**, **PostgreSQL**, and **Docker**. The pipeline extracts real-time weather data, transforms it into a structured format, and loads it into a database — all fully automated and orchestrated for seamless data analysis.
 
-Project Contents
-================
+---
 
-Your Astro project contains the following files and folders:
+## 🔍 Project Goal
 
-- dags: This folder contains the Python files for your Airflow DAGs. By default, this directory includes one example DAG:
-    - `example_astronauts`: This DAG shows a simple ETL pipeline example that queries the list of astronauts currently in space from the Open Notify API and prints a statement for each astronaut. The DAG uses the TaskFlow API to define tasks in Python, and dynamic task mapping to dynamically print a statement for each astronaut. For more on how this DAG works, see our [Getting started tutorial](https://www.astronomer.io/docs/learn/get-started-with-airflow).
-- Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
-- include: This folder contains any additional files that you want to include as part of your project. It is empty by default.
-- packages.txt: Install OS-level packages needed for your project by adding them to this file. It is empty by default.
-- requirements.txt: Install Python packages needed for your project by adding them to this file. It is empty by default.
-- plugins: Add custom or community plugins for your project to this file. It is empty by default.
-- airflow_settings.yaml: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as you develop DAGs in this project.
+- Extract live weather data from the **Open-Meteo API** 🌤️  
+- Transform raw JSON into structured datasets 🛠️  
+- Load results into **PostgreSQL** for analytics 📊  
+- Automate the entire ETL process using **Airflow DAGs** ⏱️  
 
-Deploy Your Project Locally
-===========================
+---
 
-Start Airflow on your local machine by running 'astro dev start'.
+## ⚙️ Tools & Their Purpose
 
-This command will spin up five Docker containers on your machine, each for a different Airflow component:
+| Tool/Software | Purpose |
+|---------------|---------|
+| **Apache Airflow** | Orchestrates the ETL workflow, schedules and automates tasks |
+| **Python (Pandas, Boto3, PyArrow)** | Handles data extraction, transformation, and loading logic |
+| **PostgreSQL** | Stores the transformed weather data for analysis and reporting |
+| **DBeaver** | Visualizes and manages the database, simplifies monitoring and debugging |
+| **Docker** | Containerizes Airflow and its dependencies for reproducible deployments |
+| **Astronomer CLI** | Runs Airflow in a local Dockerized environment efficiently |
+| **Open-Meteo API** | Provides live weather data in JSON format |
+| **Git/GitHub** | Version control and project repository management |
 
-- Postgres: Airflow's Metadata Database
-- Scheduler: The Airflow component responsible for monitoring and triggering tasks
-- DAG Processor: The Airflow component responsible for parsing DAGs
-- API Server: The Airflow component responsible for serving the Airflow UI and API
-- Triggerer: The Airflow component responsible for triggering deferred tasks
+---
 
-When all five containers are ready the command will open the browser to the Airflow UI at http://localhost:8080/. You should also be able to access your Postgres Database at 'localhost:5432/postgres' with username 'postgres' and password 'postgres'.
+## 🛠️ Workflow Steps
 
-Note: If you already have either of the above ports allocated, you can either [stop your existing Docker containers or change the port](https://www.astronomer.io/docs/astro/cli/troubleshoot-locally#ports-are-not-available-for-my-local-airflow-webserver).
+1️⃣ **Extract**: Pulls live weather data via API using Airflow's `HttpHook`.  
+2️⃣ **Transform**: Cleans and structures the raw JSON using Python (`Pandas`).  
+3️⃣ **Load**: Inserts data into **PostgreSQL** using `PostgresOperator`.  
+4️⃣ **Automation**: DAG triggers daily or on-demand to update the database automatically.
 
-Deploy Your Project to Astronomer
-=================================
+---
 
-If you have an Astronomer account, pushing code to a Deployment on Astronomer is simple. For deploying instructions, refer to Astronomer documentation: https://www.astronomer.io/docs/astro/deploy-code/
+## ⚡ Challenges & Solutions
 
-Contact
-=======
+- **Missing Airflow Providers** → Installed necessary packages inside Docker with `pip install`.  
+- **Deprecation Issues** (`days_ago`, `schedule_interval`) → Updated DAG code to use **datetime** and **schedule**.  
+- **PostgreSQL Connection** → Used **DBeaver** for external database access and smooth monitoring.  
 
-The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
+---
+
+## ✅ Outcome
+
+- Fully automated ETL pipeline that can be scheduled daily or triggered manually.  
+- Real-time weather data is loaded into PostgreSQL, ready for dashboards or analytics.  
+- Pipeline designed to scale for larger datasets and additional APIs.  
+
+---
+
+## 💡 Key Skills Gained
+
+**Workflow Orchestration**, **Airflow DAG Debugging**, **Python ETL**, **PostgreSQL Integration**, **Containerized Deployment (Docker)**, **API Data Handling**, **Data Cleaning & Transformation**, **Process Automation**, **ETL/ELT Pipelines**, **Data Warehousing**, **Data Modeling**, **Project Documentation**.
+
+---
+
+## 📂 Repository Link
+
+Explore the full project here: [Airflow1_project Repository](https://github.com/ArielBleriot/Excel_Data_Findings/edit/main/Airflow1_project/README.md)  
+
+---
+
+Made with ❤️ by **Ariel Bleriot Ndonfak Sapi**  
