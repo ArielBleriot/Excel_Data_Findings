@@ -61,7 +61,7 @@ Welcome to **Airflow1_project**! This mini-project demonstrates a fully automate
 
 ## 📂 Repository Link
 
-Explore my first etl_pipeline project of my training here: [etl_pipeline](https://github.com/ArielBleriot/Excel_Data_Findings/tree/main/project1_etl-pipeline)  
+Explore also this etl_pipeline project here: [etl_pipeline](https://github.com/ArielBleriot/Excel_Data_Findings/tree/main/project1_etl-pipeline)  
 
 ---
 
