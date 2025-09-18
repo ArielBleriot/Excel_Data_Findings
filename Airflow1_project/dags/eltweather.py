@@ -58,7 +58,7 @@ with DAG(
         conn = pg_hook.get_conn()
         cursor = conn.cursor()
 
-        # Create table if it doesn't exist
+        
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS weather_data (
             latitude FLOAT,
@@ -87,7 +87,7 @@ with DAG(
         conn.commit()
         cursor.close()
 
-    # DAG workflow
+    
     weather_data = extract_weather_data()
     transformed_data = transform_weather_data(weather_data)
     load_weather_data(transformed_data)
