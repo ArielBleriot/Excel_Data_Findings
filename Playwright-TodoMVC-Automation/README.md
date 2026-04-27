@@ -153,6 +153,10 @@ Playwright-TodoMVC-Automation/
 ├── package-lock.json
 └── README.md
 
+todo-demo1.spec.js → main Playwright test file
+Report.pdf → exported test execution report
+index.html → HTML report
+
 🚀 Future Improvements
 🔄 Refactor to Page Object Model (POM)
 ⚙️ Integrate CI/CD (GitHub Actions)
