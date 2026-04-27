@@ -160,5 +160,5 @@ Playwright-TodoMVC-Automation/
 
 
 Ariel Bleriot Ndonfak Sapi
-💼 Data Engineering & QA Automation
+💼Product Manager & QA Automation
 🔗 GitHub: https://github.com/ArielBleriot
