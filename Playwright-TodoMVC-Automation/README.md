@@ -149,6 +149,7 @@ Playwright-TodoMVC-Automation/
 ├── package.json
 ├── package-lock.json
 └── README.md
+
 🚀 Future Improvements
 🔄 Refactor to Page Object Model (POM)
 ⚙️ Integrate CI/CD (GitHub Actions)
@@ -157,8 +158,7 @@ Playwright-TodoMVC-Automation/
 📈 Performance & load testing
 👨‍💻 Author
 
-Ariel Bleriot Ndonfak Sapi
 
-📍 Dortmund, Germany
+Ariel Bleriot Ndonfak Sapi
 💼 Data Engineering & QA Automation
 🔗 GitHub: https://github.com/ArielBleriot
