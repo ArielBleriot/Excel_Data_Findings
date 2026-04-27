@@ -92,7 +92,9 @@ Tried to interact with elements after applying filters.
 Fix:
 
 Set state first (complete todos)
+
 THEN apply filters
+
 💡 What I Learned
 🧠 Importance of test order and UI state
 🎯 Why precise locators matter
@@ -134,7 +136,8 @@ Generated from HTML report using browser export or automation script.
 
 📂 See:
 
-/reports/playwright-report.pdf
+report.pdf
+
 📁 Project Structure
 Playwright-TodoMVC-Automation/
 │
